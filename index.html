@@ -6,21 +6,25 @@
     <title>90plus IPTV - Canlı TV Platformu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <i class="fas fa-play-circle"></i>
-                <span>90plus IPTV</span>
+                <div class="logo-retro">
+                    <span class="logo-text">90</span>
+                    <span class="logo-plus">+</span>
+                    <span class="logo-iptv">IPTV</span>
+                </div>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#channels">Kanallar</a></li>
-                <li><a href="#movies">Filmler</a></li>
-                <li><a href="#series">Diziler</a></li>
-                <li><a href="#sports">Spor</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+                <li><a href="#channels"><i class="fas fa-tv"></i> Kanallar</a></li>
+                <li><a href="#movies"><i class="fas fa-film"></i> Filmler</a></li>
+                <li><a href="#series"><i class="fas fa-play-circle"></i> Diziler</a></li>
+                <li><a href="#sports"><i class="fas fa-futbol"></i> Spor</a></li>
             </ul>
             <div class="nav-right">
                 <input type="text" class="search-box" placeholder="Ara...">
@@ -31,12 +35,24 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>90plus IPTV</h1>
-            <p>Binlerce Kanal, Film ve Diziye Anında Erişin</p>
-            <button class="cta-btn">Ücretsiz Deneyin</button>
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
         </div>
-        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glow-text">90</span><span class="glow-accent">+</span><span class="glow-text"> IPTV</span>
+            </h1>
+            <p class="hero-subtitle">Binlerce Kanal, Film ve Diziye Anında Erişin</p>
+            <button class="cta-btn">
+                <i class="fas fa-play"></i> Ücretsiz Deneyin
+            </button>
+        </div>
     </section>
 
     <!-- Categories Section -->
@@ -74,42 +90,40 @@
             <h2>Popüler Kanallar</h2>
             <div class="channel-grid">
                 <div class="channel-card">
-                    <div class="channel-image" style="background: linear-gradient(135deg, #ff8c42, #ff6b35);">
+                    <div class="channel-image">
+                        <img src="https://via.placeholder.com/200x150/FF0000/FFFFFF?text=TRT+1" alt="TRT 1">
                         <i class="fas fa-play"></i>
                     </div>
                     <h3>TRT 1</h3>
                     <p>Genel</p>
                 </div>
                 <div class="channel-card">
-                    <div class="channel-image" style="background: linear-gradient(135deg, #003d66, #1a5f7a);">
+                    <div class="channel-image">
+                        <img src="https://via.placeholder.com/200x150/FFD700/000000?text=Kanal+D" alt="Kanal D">
                         <i class="fas fa-play"></i>
                     </div>
                     <h3>Kanal D</h3>
                     <p>Genel</p>
                 </div>
                 <div class="channel-card">
-                    <div class="channel-image" style="background: linear-gradient(135deg, #ff8c42, #ffa07a);">
+                    <div class="channel-image">
+                        <img src="https://via.placeholder.com/200x150/003D66/FFFFFF?text=ATV" alt="ATV">
                         <i class="fas fa-play"></i>
                     </div>
                     <h3>ATV</h3>
                     <p>Genel</p>
                 </div>
                 <div class="channel-card">
-                    <div class="channel-image" style="background: linear-gradient(135deg, #003d66, #2c8aa6);">
+                    <div class="channel-image">
+                        <img src="https://via.placeholder.com/200x150/FF8C42/FFFFFF?text=Show+TV" alt="Show TV">
                         <i class="fas fa-play"></i>
                     </div>
                     <h3>Show TV</h3>
                     <p>Genel</p>
                 </div>
                 <div class="channel-card">
-                    <div class="channel-image" style="background: linear-gradient(135deg, #ff8c42, #ff7c50);">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <h3>Fox TV</h3>
-                    <p>Genel</p>
-                </div>
-                <div class="channel-card">
-                    <div class="channel-image" style="background: linear-gradient(135deg, #003d66, #1a5f7a);">
+                    <div class="channel-image">
+                        <img src="https://via.placeholder.com/200x150/1a5f7a/FFFFFF?text=Star+TV" alt="Star TV">
                         <i class="fas fa-play"></i>
                     </div>
                     <h3>Star TV</h3>
@@ -125,27 +139,35 @@
             <h2>Popüler Filmler</h2>
             <div class="movie-grid">
                 <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>Film 1</h3>
-                    <p>2024 | Aksiyon</p>
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/200x300/E50914/FFFFFF?text=Netflix+Film" alt="Film">
+                    </div>
+                    <h3>Aksiyon Filmi</h3>
+                    <p>2024 | Netflix</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
                 <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>Film 2</h3>
-                    <p>2024 | Dram</p>
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/200x300/221F1F/00D9FF?text=Amazon+Prime" alt="Film">
+                    </div>
+                    <h3>Dram Filmi</h3>
+                    <p>2024 | Amazon Prime</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
                 <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>Film 3</h3>
-                    <p>2024 | Komedi</p>
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/200x300/0066FF/FFFFFF?text=BlueTv+Film" alt="Film">
+                    </div>
+                    <h3>Komedi Filmi</h3>
+                    <p>2024 | BlueTv</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
                 <div class="movie-card">
-                    <div class="movie-poster"></div>
-                    <h3>Film 4</h3>
-                    <p>2024 | Gerilim</p>
+                    <div class="movie-poster">
+                        <img src="https://via.placeholder.com/200x300/FF6B00/FFFFFF?text=Gerilim+Film" alt="Film">
+                    </div>
+                    <h3>Gerilim Filmi</h3>
+                    <p>2024 | Netflix</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
             </div>
@@ -158,26 +180,34 @@
             <h2>Popüler Diziler</h2>
             <div class="series-grid">
                 <div class="series-card">
-                    <div class="series-poster"></div>
-                    <h3>Dizi 1</h3>
+                    <div class="series-poster">
+                        <img src="https://via.placeholder.com/200x300/E50914/FFFFFF?text=Dizi+1" alt="Dizi">
+                    </div>
+                    <h3>Breaking Bad</h3>
                     <p>Sezon 1 | 12 Bölüm</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
                 <div class="series-card">
-                    <div class="series-poster"></div>
-                    <h3>Dizi 2</h3>
+                    <div class="series-poster">
+                        <img src="https://via.placeholder.com/200x300/221F1F/00D9FF?text=Dizi+2" alt="Dizi">
+                    </div>
+                    <h3>The Boys</h3>
                     <p>Sezon 2 | 15 Bölüm</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
                 <div class="series-card">
-                    <div class="series-poster"></div>
-                    <h3>Dizi 3</h3>
+                    <div class="series-poster">
+                        <img src="https://via.placeholder.com/200x300/0066FF/FFFFFF?text=Dizi+3" alt="Dizi">
+                    </div>
+                    <h3>Stranger Things</h3>
                     <p>Sezon 1 | 10 Bölüm</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
                 <div class="series-card">
-                    <div class="series-poster"></div>
-                    <h3>Dizi 4</h3>
+                    <div class="series-poster">
+                        <img src="https://via.placeholder.com/200x300/FF6B00/FFFFFF?text=Dizi+4" alt="Dizi">
+                    </div>
+                    <h3>Peaky Blinders</h3>
                     <p>Sezon 3 | 20 Bölüm</p>
                     <button class="watch-btn"><i class="fas fa-play"></i> İzle</button>
                 </div>
