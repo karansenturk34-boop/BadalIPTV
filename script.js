@@ -292,5 +292,5 @@ document.addEventListener('keydown', function(e) {
 });
 
 // Log başarılı yükleme
-console.log('%c🎬 90plus IPTV - Retro Neon IPTV Platformu 🎬', 'color: #ff00ff; font-size: 20px; text-shadow: 0 0 10px #00ffff; font-weight: bold;');
+console.log('%c🎬 Premium90 - Retro Neon IPTV Platformu 🎬', 'color: #ff00ff; font-size: 20px; text-shadow: 0 0 10px #00ffff; font-weight: bold;');
 console.log('%c90\'lar tarzı neon efektleri aktif! Hoşgeldiniz!', 'color: #00ffff; font-size: 14px; font-weight: bold;');
